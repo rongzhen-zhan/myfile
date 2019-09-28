@@ -1,0 +1,376 @@
+[root@ctrl01 ~]# ^C
+[root@ctrl01 ~]# ceph pg 4.421 query
+{
+    "state": "active+remapped",
+    "snap_trimq": "[]",
+    "epoch": 6590,
+    "up": [
+        66,
+        171
+    ],
+    "acting": [
+        66,
+        171,
+        5
+    ],
+    "actingbackfill": [
+        "5",
+        "66",
+        "171"
+    ],
+    "info": {
+        "pgid": "4.421",
+        "last_update": "6590'610419",
+        "last_complete": "6590'610419",
+        "log_tail": "6590'607363",
+        "last_user_version": 610419,
+        "last_backfill": "MAX",
+        "purged_snaps": "[1~e7]",
+        "history": {
+            "epoch_created": 1509,
+            "last_epoch_started": 6240,
+            "last_epoch_clean": 6240,
+            "last_epoch_split": 0,
+            "same_up_since": 6160,
+            "same_interval_since": 6239,
+            "same_primary_since": 6239,
+            "last_scrub": "6152'604312",
+            "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+            "last_deep_scrub": "6152'604312",
+            "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+            "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306"
+        },
+        "stats": {
+            "version": "6590'610419",
+            "reported_seq": "574704",
+            "reported_epoch": "6590",
+            "state": "active+remapped",
+            "last_fresh": "2019-09-28 02:57:26.736137",
+            "last_change": "2019-09-19 11:43:04.912349",
+            "last_active": "2019-09-28 02:57:26.736137",
+            "last_peered": "2019-09-28 02:57:26.736137",
+            "last_clean": "2019-09-19 11:28:07.630846",
+            "last_became_active": "0.000000",
+            "last_became_peered": "0.000000",
+            "last_unstale": "2019-09-28 02:57:26.736137",
+            "last_undegraded": "2019-09-28 02:57:26.736137",
+            "last_fullsized": "2019-09-28 02:57:26.736137",
+            "mapping_epoch": 6161,
+            "log_start": "6590'607363",
+            "ondisk_log_start": "6590'607363",
+            "created": 1509,
+            "last_epoch_clean": 6240,
+            "parent": "0.0",
+            "parent_split_bits": 0,
+            "last_scrub": "6152'604312",
+            "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+            "last_deep_scrub": "6152'604312",
+            "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+            "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306",
+            "log_size": 3056,
+            "ondisk_log_size": 3056,
+            "stats_invalid": "0",
+            "stat_sum": {
+                "num_bytes": 926298112,
+                "num_objects": 226,
+                "num_object_clones": 0,
+                "num_object_copies": 678,
+                "num_objects_missing_on_primary": 0,
+                "num_objects_degraded": 6,
+                "num_objects_misplaced": 226,
+                "num_objects_unfound": 0,
+                "num_objects_dirty": 226,
+                "num_whiteouts": 0,
+                "num_read": 31188,
+                "num_read_kb": 2124748,
+                "num_write": 1218987,
+                "num_write_kb": 30742495,
+                "num_scrub_errors": 0,
+                "num_shallow_scrub_errors": 0,
+                "num_deep_scrub_errors": 0,
+                "num_objects_recovered": 459,
+                "num_bytes_recovered": 1886150656,
+                "num_keys_recovered": 0,
+                "num_objects_omap": 0,
+                "num_objects_hit_set_archive": 0,
+                "num_bytes_hit_set_archive": 0
+            },
+            "up": [
+                66,
+                171
+            ],
+            "acting": [
+                66,
+                171,
+                5
+            ],
+            "blocked_by": [],
+            "up_primary": 66,
+            "acting_primary": 66
+        },
+        "empty": 0,
+        "dne": 0,
+        "incomplete": 0,
+        "last_epoch_started": 6240,
+        "hit_set_history": {
+            "current_last_update": "0'0",
+            "current_last_stamp": "0.000000",
+            "current_info": {
+                "begin": "0.000000",
+                "end": "0.000000",
+                "version": "0'0"
+            },
+            "history": []
+        }
+    },
+    "peer_info": [
+        {
+            "peer": "5",
+            "pgid": "4.421",
+            "last_update": "6590'610419",
+            "last_complete": "6590'610419",
+            "log_tail": "6152'601339",
+            "last_user_version": 604363,
+            "last_backfill": "MAX",
+            "purged_snaps": "[1~e7]",
+            "history": {
+                "epoch_created": 1509,
+                "last_epoch_started": 6240,
+                "last_epoch_clean": 6240,
+                "last_epoch_split": 0,
+                "same_up_since": 6160,
+                "same_interval_since": 6239,
+                "same_primary_since": 6239,
+                "last_scrub": "6152'604312",
+                "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_deep_scrub": "6152'604312",
+                "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306"
+            },
+            "stats": {
+                "version": "6159'604363",
+                "reported_seq": "570715",
+                "reported_epoch": "6239",
+                "state": "active+undersized+remapped",
+                "last_fresh": "2019-09-19 11:43:02.945296",
+                "last_change": "2019-09-19 11:43:02.945296",
+                "last_active": "2019-09-19 11:43:02.945296",
+                "last_peered": "2019-09-19 11:43:02.945296",
+                "last_clean": "2019-09-19 11:28:07.630846",
+                "last_became_active": "0.000000",
+                "last_became_peered": "0.000000",
+                "last_unstale": "2019-09-19 11:43:02.945296",
+                "last_undegraded": "2019-09-19 11:43:02.945296",
+                "last_fullsized": "2019-09-19 11:41:15.005821",
+                "mapping_epoch": 6161,
+                "log_start": "6152'601339",
+                "ondisk_log_start": "6152'601339",
+                "created": 1509,
+                "last_epoch_clean": 6237,
+                "parent": "0.0",
+                "parent_split_bits": 0,
+                "last_scrub": "6152'604312",
+                "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_deep_scrub": "6152'604312",
+                "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "log_size": 3024,
+                "ondisk_log_size": 3024,
+                "stats_invalid": "0",
+                "stat_sum": {
+                    "num_bytes": 913715200,
+                    "num_objects": 223,
+                    "num_object_clones": 0,
+                    "num_object_copies": 892,
+                    "num_objects_missing_on_primary": 0,
+                    "num_objects_degraded": 223,
+                    "num_objects_misplaced": 446,
+                    "num_objects_unfound": 0,
+                    "num_objects_dirty": 223,
+                    "num_whiteouts": 0,
+                    "num_read": 31117,
+                    "num_read_kb": 2124040,
+                    "num_write": 1206875,
+                    "num_write_kb": 30642935,
+                    "num_scrub_errors": 0,
+                    "num_shallow_scrub_errors": 0,
+                    "num_deep_scrub_errors": 0,
+                    "num_objects_recovered": 459,
+                    "num_bytes_recovered": 1886150656,
+                    "num_keys_recovered": 0,
+                    "num_objects_omap": 0,
+                    "num_objects_hit_set_archive": 0,
+                    "num_bytes_hit_set_archive": 0
+                },
+                "up": [
+                    66,
+                    171
+                ],
+                "acting": [
+                    66,
+                    171,
+                    5
+                ],
+                "blocked_by": [],
+                "up_primary": 66,
+                "acting_primary": 66
+            },
+            "empty": 0,
+            "dne": 0,
+            "incomplete": 0,
+            "last_epoch_started": 6240,
+            "hit_set_history": {
+                "current_last_update": "0'0",
+                "current_last_stamp": "0.000000",
+                "current_info": {
+                    "begin": "0.000000",
+                    "end": "0.000000",
+                    "version": "0'0"
+                },
+                "history": []
+            }
+        },
+        {
+            "peer": "171",
+            "pgid": "4.421",
+            "last_update": "6590'610419",
+            "last_complete": "6590'610419",
+            "log_tail": "6152'601363",
+            "last_user_version": 0,
+            "last_backfill": "MAX",
+            "purged_snaps": "[1~e7]",
+            "history": {
+                "epoch_created": 1509,
+                "last_epoch_started": 6240,
+                "last_epoch_clean": 6240,
+                "last_epoch_split": 0,
+                "same_up_since": 6160,
+                "same_interval_since": 6239,
+                "same_primary_since": 6239,
+                "last_scrub": "6152'604312",
+                "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_deep_scrub": "6152'604312",
+                "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306"
+            },
+            "stats": {
+                "version": "6159'604363",
+                "reported_seq": "570712",
+                "reported_epoch": "6236",
+                "state": "active+undersized+degraded+remapped+backfilling",
+                "last_fresh": "2019-09-19 11:43:01.617681",
+                "last_change": "2019-09-19 11:41:22.902459",
+                "last_active": "2019-09-19 11:43:01.617681",
+                "last_peered": "2019-09-19 11:43:01.617681",
+                "last_clean": "2019-09-19 11:28:07.630846",
+                "last_became_active": "0.000000",
+                "last_became_peered": "0.000000",
+                "last_unstale": "2019-09-19 11:43:01.617681",
+                "last_undegraded": "2019-09-19 11:41:15.005821",
+                "last_fullsized": "2019-09-19 11:41:15.005821",
+                "mapping_epoch": 6161,
+                "log_start": "6152'601339",
+                "ondisk_log_start": "6152'601339",
+                "created": 1509,
+                "last_epoch_clean": 6155,
+                "parent": "0.0",
+                "parent_split_bits": 0,
+                "last_scrub": "6152'604312",
+                "last_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_deep_scrub": "6152'604312",
+                "last_deep_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "last_clean_scrub_stamp": "2019-09-19 08:52:40.326306",
+                "log_size": 3024,
+                "ondisk_log_size": 3024,
+                "stats_invalid": "0",
+                "stat_sum": {
+                    "num_bytes": 913715200,
+                    "num_objects": 223,
+                    "num_object_clones": 0,
+                    "num_object_copies": 892,
+                    "num_objects_missing_on_primary": 0,
+                    "num_objects_degraded": 223,
+                    "num_objects_misplaced": 450,
+                    "num_objects_unfound": 0,
+                    "num_objects_dirty": 223,
+                    "num_whiteouts": 0,
+                    "num_read": 31117,
+                    "num_read_kb": 2124040,
+                    "num_write": 1206875,
+                    "num_write_kb": 30642935,
+                    "num_scrub_errors": 0,
+                    "num_shallow_scrub_errors": 0,
+                    "num_deep_scrub_errors": 0,
+                    "num_objects_recovered": 459,
+                    "num_bytes_recovered": 1886150656,
+                    "num_keys_recovered": 0,
+                    "num_objects_omap": 0,
+                    "num_objects_hit_set_archive": 0,
+                    "num_bytes_hit_set_archive": 0
+                },
+                "up": [
+                    66,
+                    171
+                ],
+                "acting": [
+                    66,
+                    171,
+                    5
+                ],
+                "blocked_by": [],
+                "up_primary": 66,
+                "acting_primary": 66
+            },
+            "empty": 0,
+            "dne": 0,
+            "incomplete": 0,
+            "last_epoch_started": 6240,
+            "hit_set_history": {
+                "current_last_update": "0'0",
+                "current_last_stamp": "0.000000",
+                "current_info": {
+                    "begin": "0.000000",
+                    "end": "0.000000",
+                    "version": "0'0"
+                },
+                "history": []
+            }
+        }
+    ],
+    "recovery_state": [
+        {
+            "name": "Started\/Primary\/Active",
+            "enter_time": "2019-09-19 11:43:04.838309",
+            "might_have_unfound": [],
+            "recovery_progress": {
+                "backfill_targets": [],
+                "waiting_on_backfill": [],
+                "last_backfill_started": "0\/\/0\/\/-1",
+                "backfill_info": {
+                    "begin": "0\/\/0\/\/-1",
+                    "end": "0\/\/0\/\/-1",
+                    "objects": []
+                },
+                "peer_backfill_info": [],
+                "backfills_in_flight": [],
+                "recovering": [],
+                "pg_backend": {
+                    "pull_from_peer": [],
+                    "pushing": []
+                }
+            },
+            "scrub": {
+                "scrubber.epoch_start": "0",
+                "scrubber.active": 0,
+                "scrubber.waiting_on": 0,
+                "scrubber.waiting_on_whom": []
+            }
+        },
+        {
+            "name": "Started",
+            "enter_time": "2019-09-19 11:43:03.790896"
+        }
+    ],
+    "agent_state": {}
+}
+[root@ctrl01 ~]# 
