@@ -1,0 +1,957 @@
+# begin crush map
+tunable choose_local_tries 0
+tunable choose_local_fallback_tries 0
+tunable choose_total_tries 50
+tunable chooseleaf_descend_once 1
+tunable straw_calc_version 1
+
+# devices
+device 0 osd.0
+device 1 osd.1
+device 2 osd.2
+device 3 osd.3
+device 4 osd.4
+device 5 osd.5
+device 6 osd.6
+device 7 osd.7
+device 8 osd.8
+device 9 osd.9
+device 10 osd.10
+device 11 osd.11
+device 12 osd.12
+device 13 osd.13
+device 14 osd.14
+device 15 osd.15
+device 16 osd.16
+device 17 osd.17
+device 18 osd.18
+device 19 osd.19
+device 20 osd.20
+device 21 osd.21
+device 22 osd.22
+device 23 osd.23
+device 24 osd.24
+device 25 osd.25
+device 26 osd.26
+device 27 osd.27
+device 28 osd.28
+device 29 osd.29
+device 30 osd.30
+device 31 osd.31
+device 32 osd.32
+device 33 osd.33
+device 34 osd.34
+device 35 osd.35
+device 36 osd.36
+device 37 osd.37
+device 38 osd.38
+device 39 osd.39
+device 40 osd.40
+device 41 osd.41
+device 42 osd.42
+device 43 osd.43
+device 44 osd.44
+device 45 osd.45
+device 46 osd.46
+device 47 osd.47
+device 48 osd.48
+device 49 osd.49
+device 50 osd.50
+device 51 osd.51
+device 52 osd.52
+device 53 osd.53
+device 54 osd.54
+device 55 osd.55
+device 56 osd.56
+device 57 osd.57
+device 58 osd.58
+device 59 osd.59
+device 60 osd.60
+device 61 osd.61
+device 62 osd.62
+device 63 osd.63
+device 64 osd.64
+device 65 osd.65
+device 66 osd.66
+device 67 osd.67
+device 68 osd.68
+device 69 osd.69
+device 70 osd.70
+device 71 osd.71
+device 72 osd.72
+device 73 osd.73
+device 74 osd.74
+device 75 osd.75
+device 76 osd.76
+device 77 osd.77
+device 78 osd.78
+device 79 osd.79
+device 80 osd.80
+device 81 osd.81
+device 82 osd.82
+device 83 osd.83
+device 84 osd.84
+device 85 osd.85
+device 86 osd.86
+device 87 osd.87
+device 88 osd.88
+device 89 osd.89
+device 90 osd.90
+device 91 osd.91
+device 92 osd.92
+device 93 osd.93
+device 94 osd.94
+device 95 osd.95
+device 96 osd.96
+device 97 osd.97
+device 98 osd.98
+device 99 osd.99
+device 100 osd.100
+device 101 osd.101
+device 102 osd.102
+device 103 osd.103
+device 104 osd.104
+device 105 osd.105
+device 106 osd.106
+device 107 osd.107
+device 108 osd.108
+device 109 osd.109
+device 110 osd.110
+device 111 osd.111
+device 112 osd.112
+device 113 osd.113
+device 114 osd.114
+device 115 osd.115
+device 116 osd.116
+device 117 osd.117
+device 118 osd.118
+device 119 osd.119
+device 120 osd.120
+device 121 osd.121
+device 122 osd.122
+device 123 osd.123
+device 124 osd.124
+device 125 osd.125
+device 126 osd.126
+device 127 osd.127
+device 128 osd.128
+device 129 osd.129
+device 130 osd.130
+device 131 osd.131
+device 132 osd.132
+device 133 osd.133
+device 134 osd.134
+device 135 osd.135
+device 136 osd.136
+device 137 osd.137
+device 138 osd.138
+device 139 osd.139
+device 140 osd.140
+device 141 osd.141
+device 142 osd.142
+device 143 osd.143
+device 144 osd.144
+device 145 osd.145
+device 146 osd.146
+device 147 osd.147
+device 148 osd.148
+device 149 osd.149
+device 150 osd.150
+device 151 osd.151
+device 152 osd.152
+device 153 osd.153
+device 154 osd.154
+device 155 osd.155
+device 156 osd.156
+device 157 osd.157
+device 158 osd.158
+device 159 osd.159
+device 160 osd.160
+device 161 osd.161
+device 162 osd.162
+device 163 osd.163
+device 164 osd.164
+device 165 osd.165
+device 166 osd.166
+device 167 osd.167
+device 168 osd.168
+device 169 osd.169
+device 170 osd.170
+device 171 osd.171
+device 172 osd.172
+device 173 osd.173
+device 174 osd.174
+device 175 osd.175
+device 176 osd.176
+device 177 osd.177
+device 178 osd.178
+device 179 osd.179
+device 180 osd.180
+device 181 osd.181
+device 182 osd.182
+device 183 osd.183
+device 184 osd.184
+device 185 osd.185
+device 186 osd.186
+device 187 osd.187
+device 188 osd.188
+device 189 osd.189
+device 190 osd.190
+device 191 osd.191
+device 192 osd.192
+device 193 osd.193
+device 194 osd.194
+device 195 osd.195
+device 196 osd.196
+device 197 osd.197
+device 198 osd.198
+device 199 osd.199
+device 200 osd.200
+device 201 osd.201
+device 202 osd.202
+device 203 osd.203
+device 204 osd.204
+device 205 osd.205
+device 206 osd.206
+device 207 osd.207
+device 208 osd.208
+device 209 osd.209
+device 210 osd.210
+device 211 osd.211
+device 212 osd.212
+device 213 osd.213
+device 214 osd.214
+device 215 osd.215
+device 216 osd.216
+device 217 osd.217
+device 218 osd.218
+device 219 osd.219
+device 220 osd.220
+device 221 osd.221
+device 222 osd.222
+device 223 osd.223
+device 224 osd.224
+device 225 osd.225
+device 226 osd.226
+device 227 osd.227
+device 228 osd.228
+device 229 osd.229
+device 230 osd.230
+device 231 osd.231
+device 232 osd.232
+device 233 osd.233
+device 234 osd.234
+device 235 osd.235
+device 236 osd.236
+device 237 osd.237
+device 238 osd.238
+device 239 osd.239
+device 240 osd.240
+device 241 osd.241
+device 242 osd.242
+device 243 osd.243
+device 244 osd.244
+device 245 osd.245
+device 246 osd.246
+device 247 osd.247
+device 248 osd.248
+device 249 osd.249
+device 250 osd.250
+device 251 osd.251
+device 252 osd.252
+device 253 osd.253
+device 254 osd.254
+device 255 osd.255
+device 256 osd.256
+device 257 osd.257
+device 258 osd.258
+device 259 osd.259
+device 260 osd.260
+device 261 osd.261
+device 262 osd.262
+device 263 osd.263
+device 264 osd.264
+device 265 osd.265
+device 266 osd.266
+device 267 osd.267
+device 268 osd.268
+device 269 osd.269
+device 270 osd.270
+device 271 osd.271
+device 272 osd.272
+device 273 osd.273
+device 274 osd.274
+device 275 osd.275
+device 276 osd.276
+device 277 osd.277
+device 278 osd.278
+device 279 osd.279
+device 280 osd.280
+device 281 osd.281
+device 282 osd.282
+device 283 osd.283
+device 284 osd.284
+device 285 osd.285
+device 286 osd.286
+device 287 osd.287
+device 288 osd.288
+device 289 osd.289
+device 290 osd.290
+device 291 osd.291
+device 292 osd.292
+device 293 osd.293
+device 294 osd.294
+device 295 osd.295
+device 296 osd.296
+device 297 osd.297
+device 298 osd.298
+device 299 osd.299
+device 300 osd.300
+device 301 osd.301
+device 302 osd.302
+device 303 osd.303
+device 304 osd.304
+device 305 osd.305
+device 306 osd.306
+device 307 osd.307
+device 308 osd.308
+device 309 osd.309
+device 310 osd.310
+device 311 osd.311
+device 312 osd.312
+device 313 osd.313
+device 314 osd.314
+device 315 osd.315
+device 316 osd.316
+device 317 osd.317
+device 318 osd.318
+device 319 osd.319
+device 320 osd.320
+device 321 osd.321
+device 322 osd.322
+device 323 osd.323
+
+# types
+type 0 osd
+type 1 host
+type 2 chassis
+type 3 rack
+type 4 row
+type 5 pdu
+type 6 pod
+type 7 room
+type 8 datacenter
+type 9 vr
+type 10 root
+
+# buckets
+host kvm054 {
+	id -2		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.0 weight 1.090
+	item osd.1 weight 1.090
+	item osd.2 weight 1.090
+	item osd.3 weight 1.090
+	item osd.4 weight 1.090
+	item osd.5 weight 1.090
+	item osd.6 weight 1.090
+	item osd.7 weight 1.090
+	item osd.8 weight 1.090
+	item osd.9 weight 1.090
+	item osd.10 weight 1.090
+	item osd.11 weight 1.090
+	item osd.12 weight 1.090
+	item osd.13 weight 1.090
+	item osd.14 weight 1.090
+	item osd.15 weight 1.090
+	item osd.16 weight 1.090
+	item osd.17 weight 1.090
+	item osd.18 weight 1.090
+	item osd.19 weight 1.090
+	item osd.20 weight 1.090
+	item osd.21 weight 1.090
+}
+host kvm055 {
+	id -3		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.22 weight 1.090
+	item osd.23 weight 1.090
+	item osd.24 weight 1.090
+	item osd.25 weight 1.090
+	item osd.26 weight 1.090
+	item osd.27 weight 1.090
+	item osd.28 weight 1.090
+	item osd.29 weight 1.090
+	item osd.30 weight 1.090
+	item osd.31 weight 1.090
+	item osd.32 weight 1.090
+	item osd.33 weight 1.090
+	item osd.34 weight 1.090
+	item osd.35 weight 1.090
+	item osd.36 weight 1.090
+	item osd.37 weight 1.090
+	item osd.38 weight 1.090
+	item osd.39 weight 1.090
+	item osd.40 weight 1.090
+	item osd.41 weight 1.090
+	item osd.42 weight 1.090
+	item osd.43 weight 1.090
+}
+host kvm056 {
+	id -4		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.44 weight 1.090
+	item osd.45 weight 1.090
+	item osd.46 weight 1.090
+	item osd.47 weight 1.090
+	item osd.48 weight 1.090
+	item osd.49 weight 1.090
+	item osd.50 weight 1.090
+	item osd.51 weight 1.090
+	item osd.52 weight 1.090
+	item osd.53 weight 1.090
+	item osd.54 weight 1.090
+	item osd.55 weight 1.090
+	item osd.56 weight 1.090
+	item osd.57 weight 1.090
+	item osd.58 weight 1.090
+	item osd.59 weight 1.090
+	item osd.60 weight 1.090
+	item osd.61 weight 1.090
+	item osd.62 weight 1.090
+	item osd.63 weight 1.090
+	item osd.64 weight 1.090
+	item osd.65 weight 1.090
+}
+host kvm188 {
+	id -5		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.66 weight 1.090
+	item osd.67 weight 1.090
+	item osd.68 weight 1.090
+	item osd.69 weight 1.090
+	item osd.70 weight 1.090
+	item osd.71 weight 1.090
+	item osd.72 weight 1.090
+	item osd.73 weight 1.090
+	item osd.74 weight 1.090
+	item osd.75 weight 1.090
+	item osd.76 weight 1.090
+	item osd.77 weight 1.090
+	item osd.78 weight 1.090
+	item osd.79 weight 1.090
+	item osd.80 weight 1.090
+	item osd.81 weight 1.090
+	item osd.82 weight 1.090
+	item osd.83 weight 1.090
+	item osd.84 weight 1.090
+	item osd.85 weight 1.090
+	item osd.86 weight 1.090
+	item osd.87 weight 1.090
+}
+rack rack-sas-01 {
+	id -26		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item kvm054 weight 23.980
+	item kvm055 weight 23.980
+	item kvm056 weight 23.980
+	item kvm188 weight 23.980
+}
+vr vr-sas-01 {
+	id -32		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item rack-sas-01 weight 95.920
+}
+host kvm057 {
+	id -6		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.88 weight 1.090
+	item osd.89 weight 1.090
+	item osd.90 weight 1.090
+	item osd.91 weight 1.090
+	item osd.92 weight 1.090
+	item osd.93 weight 1.090
+	item osd.94 weight 1.090
+	item osd.95 weight 1.090
+	item osd.96 weight 1.090
+	item osd.97 weight 1.090
+	item osd.98 weight 1.090
+	item osd.99 weight 1.090
+	item osd.100 weight 1.090
+	item osd.101 weight 1.090
+	item osd.102 weight 1.090
+	item osd.103 weight 1.090
+	item osd.104 weight 1.090
+	item osd.105 weight 1.090
+	item osd.106 weight 1.090
+	item osd.107 weight 1.090
+	item osd.108 weight 1.090
+	item osd.109 weight 1.090
+}
+host kvm058 {
+	id -7		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.110 weight 1.090
+	item osd.111 weight 1.090
+	item osd.112 weight 1.090
+	item osd.113 weight 1.090
+	item osd.114 weight 1.090
+	item osd.115 weight 1.090
+	item osd.116 weight 1.090
+	item osd.117 weight 1.090
+	item osd.118 weight 1.090
+	item osd.119 weight 1.090
+	item osd.120 weight 1.090
+	item osd.121 weight 1.090
+	item osd.122 weight 1.090
+	item osd.123 weight 1.090
+	item osd.124 weight 1.090
+	item osd.125 weight 1.090
+	item osd.126 weight 1.090
+	item osd.127 weight 1.090
+	item osd.128 weight 1.090
+	item osd.129 weight 1.090
+	item osd.130 weight 1.090
+	item osd.131 weight 1.090
+}
+host kvm059 {
+	id -8		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.132 weight 1.090
+	item osd.133 weight 1.090
+	item osd.134 weight 1.090
+	item osd.135 weight 1.090
+	item osd.136 weight 1.090
+	item osd.137 weight 1.090
+	item osd.138 weight 1.090
+	item osd.139 weight 1.090
+	item osd.140 weight 1.090
+	item osd.141 weight 1.090
+	item osd.142 weight 1.090
+	item osd.143 weight 1.090
+	item osd.144 weight 1.090
+	item osd.145 weight 1.090
+	item osd.146 weight 1.090
+	item osd.147 weight 1.090
+	item osd.148 weight 1.090
+	item osd.149 weight 1.090
+	item osd.150 weight 1.090
+	item osd.151 weight 1.090
+	item osd.152 weight 1.090
+	item osd.153 weight 1.090
+}
+host kvm060 {
+	id -9		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.154 weight 1.090
+	item osd.155 weight 1.090
+	item osd.156 weight 1.090
+	item osd.157 weight 1.090
+	item osd.158 weight 1.090
+	item osd.159 weight 1.090
+	item osd.160 weight 1.090
+	item osd.161 weight 1.090
+	item osd.162 weight 1.090
+	item osd.163 weight 1.090
+	item osd.164 weight 1.090
+	item osd.165 weight 1.090
+	item osd.166 weight 1.090
+	item osd.167 weight 1.090
+	item osd.168 weight 1.090
+	item osd.169 weight 1.090
+	item osd.170 weight 1.090
+	item osd.171 weight 1.090
+	item osd.172 weight 1.090
+	item osd.173 weight 1.090
+	item osd.174 weight 1.090
+	item osd.175 weight 1.090
+}
+rack rack-sas-02 {
+	id -27		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item kvm057 weight 23.980
+	item kvm058 weight 23.980
+	item kvm059 weight 23.980
+	item kvm060 weight 23.980
+}
+vr vr-sas-02 {
+	id -33		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item rack-sas-02 weight 95.920
+}
+host kvm061 {
+	id -10		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.176 weight 1.090
+	item osd.177 weight 1.090
+	item osd.178 weight 1.090
+	item osd.179 weight 1.090
+	item osd.180 weight 1.090
+	item osd.181 weight 1.090
+	item osd.182 weight 1.090
+	item osd.183 weight 1.090
+	item osd.184 weight 1.090
+	item osd.185 weight 1.090
+	item osd.186 weight 1.090
+	item osd.187 weight 1.090
+	item osd.188 weight 1.090
+	item osd.189 weight 1.090
+	item osd.190 weight 1.090
+	item osd.191 weight 1.090
+	item osd.192 weight 1.090
+	item osd.193 weight 1.090
+	item osd.194 weight 1.090
+	item osd.195 weight 1.090
+	item osd.196 weight 1.090
+	item osd.197 weight 1.090
+}
+host kvm062 {
+	id -11		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.198 weight 1.090
+	item osd.199 weight 1.090
+	item osd.200 weight 1.090
+	item osd.201 weight 1.090
+	item osd.202 weight 1.090
+	item osd.203 weight 1.090
+	item osd.204 weight 1.090
+	item osd.205 weight 1.090
+	item osd.206 weight 1.090
+	item osd.207 weight 1.090
+	item osd.208 weight 1.090
+	item osd.209 weight 1.090
+	item osd.210 weight 1.090
+	item osd.211 weight 1.090
+	item osd.212 weight 1.090
+	item osd.213 weight 1.090
+	item osd.214 weight 1.090
+	item osd.215 weight 1.090
+	item osd.216 weight 1.090
+	item osd.217 weight 1.090
+	item osd.218 weight 1.090
+	item osd.219 weight 1.090
+}
+host kvm063 {
+	id -12		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.220 weight 1.090
+	item osd.221 weight 1.090
+	item osd.222 weight 1.090
+	item osd.223 weight 1.090
+	item osd.224 weight 1.090
+	item osd.225 weight 1.090
+	item osd.226 weight 1.090
+	item osd.227 weight 1.090
+	item osd.228 weight 1.090
+	item osd.229 weight 1.090
+	item osd.230 weight 1.090
+	item osd.231 weight 1.090
+	item osd.232 weight 1.090
+	item osd.233 weight 1.090
+	item osd.234 weight 1.090
+	item osd.235 weight 1.090
+	item osd.236 weight 1.090
+	item osd.237 weight 1.090
+	item osd.238 weight 1.090
+	item osd.239 weight 1.090
+	item osd.240 weight 1.090
+	item osd.323 weight 1.090
+}
+host kvm064 {
+	id -13		# do not change unnecessarily
+	# weight 23.980
+	alg straw
+	hash 0	# rjenkins1
+	item osd.241 weight 1.090
+	item osd.242 weight 1.090
+	item osd.243 weight 1.090
+	item osd.244 weight 1.090
+	item osd.245 weight 1.090
+	item osd.246 weight 1.090
+	item osd.247 weight 1.090
+	item osd.248 weight 1.090
+	item osd.249 weight 1.090
+	item osd.250 weight 1.090
+	item osd.251 weight 1.090
+	item osd.252 weight 1.090
+	item osd.253 weight 1.090
+	item osd.254 weight 1.090
+	item osd.255 weight 1.090
+	item osd.256 weight 1.090
+	item osd.257 weight 1.090
+	item osd.258 weight 1.090
+	item osd.259 weight 1.090
+	item osd.260 weight 1.090
+	item osd.261 weight 1.090
+	item osd.262 weight 1.090
+}
+rack rack-sas-03 {
+	id -28		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item kvm061 weight 23.980
+	item kvm062 weight 23.980
+	item kvm063 weight 23.980
+	item kvm064 weight 23.980
+}
+vr vr-sas-03 {
+	id -34		# do not change unnecessarily
+	# weight 95.920
+	alg straw
+	hash 0	# rjenkins1
+	item rack-sas-03 weight 95.920
+}
+root first-zone-sas {
+	id -1		# do not change unnecessarily
+	# weight 287.760
+	alg straw
+	hash 0	# rjenkins1
+	item vr-sas-01 weight 95.920
+	item vr-sas-02 weight 95.920
+	item vr-sas-03 weight 95.920
+}
+host kvm130 {
+	id -14		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.263 weight 0.730
+	item osd.264 weight 0.730
+	item osd.265 weight 0.730
+	item osd.266 weight 0.730
+	item osd.267 weight 0.730
+}
+host kvm131 {
+	id -15		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.268 weight 0.730
+	item osd.269 weight 0.730
+	item osd.270 weight 0.730
+	item osd.271 weight 0.730
+	item osd.272 weight 0.730
+}
+host kvm132 {
+	id -16		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.273 weight 0.730
+	item osd.274 weight 0.730
+	item osd.275 weight 0.730
+	item osd.276 weight 0.730
+	item osd.277 weight 0.730
+}
+host kvm134 {
+	id -17		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.278 weight 0.730
+	item osd.279 weight 0.730
+	item osd.280 weight 0.730
+	item osd.281 weight 0.730
+	item osd.282 weight 0.730
+}
+host kvm135 {
+	id -18		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.283 weight 0.730
+	item osd.284 weight 0.730
+	item osd.285 weight 0.730
+	item osd.286 weight 0.730
+	item osd.287 weight 0.730
+}
+host kvm136 {
+	id -19		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.288 weight 0.730
+	item osd.289 weight 0.730
+	item osd.290 weight 0.730
+	item osd.291 weight 0.730
+	item osd.292 weight 0.730
+}
+host kvm137 {
+	id -20		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.293 weight 0.730
+	item osd.294 weight 0.730
+	item osd.295 weight 0.730
+	item osd.296 weight 0.730
+	item osd.297 weight 0.730
+}
+host kvm138 {
+	id -21		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.298 weight 0.730
+	item osd.299 weight 0.730
+	item osd.300 weight 0.730
+	item osd.301 weight 0.730
+	item osd.302 weight 0.730
+}
+host kvm139 {
+	id -22		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.303 weight 0.730
+	item osd.304 weight 0.730
+	item osd.305 weight 0.730
+	item osd.306 weight 0.730
+	item osd.307 weight 0.730
+}
+host kvm140 {
+	id -23		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.308 weight 0.730
+	item osd.309 weight 0.730
+	item osd.310 weight 0.730
+	item osd.311 weight 0.730
+	item osd.312 weight 0.730
+}
+host kvm141 {
+	id -24		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.313 weight 0.730
+	item osd.314 weight 0.730
+	item osd.315 weight 0.730
+	item osd.316 weight 0.730
+	item osd.317 weight 0.730
+}
+host kvm133 {
+	id -25		# do not change unnecessarily
+	# weight 3.650
+	alg straw
+	hash 0	# rjenkins1
+	item osd.318 weight 0.730
+	item osd.319 weight 0.730
+	item osd.320 weight 0.730
+	item osd.321 weight 0.730
+	item osd.322 weight 0.730
+}
+rack rack-ssd-01 {
+	id -29		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item kvm130 weight 3.650
+	item kvm131 weight 3.650
+	item kvm132 weight 3.650
+	item kvm134 weight 3.650
+}
+rack rack-ssd-02 {
+	id -30		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item kvm135 weight 3.650
+	item kvm136 weight 3.650
+	item kvm137 weight 3.650
+	item kvm138 weight 3.650
+}
+rack rack-ssd-03 {
+	id -31		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item kvm139 weight 3.650
+	item kvm140 weight 3.650
+	item kvm141 weight 3.650
+	item kvm133 weight 3.650
+}
+vr vr-ssd-01 {
+	id -35		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item rack-ssd-01 weight 14.600
+}
+vr vr-ssd-02 {
+	id -36		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item rack-ssd-02 weight 14.600
+}
+vr vr-ssd-03 {
+	id -37		# do not change unnecessarily
+	# weight 14.600
+	alg straw
+	hash 0	# rjenkins1
+	item rack-ssd-03 weight 14.600
+}
+root first-zone-ssd {
+	id -38		# do not change unnecessarily
+	# weight 43.800
+	alg straw
+	hash 0	# rjenkins1
+	item vr-ssd-01 weight 14.600
+	item vr-ssd-02 weight 14.600
+	item vr-ssd-03 weight 14.600
+}
+
+# rules
+rule ruleset_sas {
+	ruleset 0
+	type replicated
+	min_size 1
+	max_size 10
+	step take first-zone-sas
+	step chooseleaf firstn 0 type vr
+	step emit
+}
+rule ruleset_ssd {
+	ruleset 1
+	type replicated
+	min_size 1
+	max_size 10
+	step take first-zone-ssd
+	step chooseleaf firstn 0 type vr
+	step emit
+}
+
+# end crush map
